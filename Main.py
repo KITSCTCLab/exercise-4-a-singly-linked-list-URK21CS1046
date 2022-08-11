@@ -51,7 +51,7 @@ class LinkedList:
         blah = self.head
         str1 = ''
         while blah:
-            str1 += str(blah.data)+' --> ' if blah.next else str(blah.data)
+            str1 += str(blah.data)+'  ' if blah.next else str(blah.data)
             blah = blah.next
         print(str1)
         # write code here

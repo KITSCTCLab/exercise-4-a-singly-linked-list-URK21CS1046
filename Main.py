@@ -28,12 +28,32 @@ class LinkedList:
         Insert node at end of the list
         :param data: integer data that will be used to create a node
         """
+        if self.head is None:
+            self.head = Node(data, None)
+            return
+
+        alex = self.head
+
+        while alex.next:
+            alex = alex.next
+
+        alex.next = Node(data, None)
+         
         # Write code here
 
     def status(self):
         """
         It prints all the elements of list.
         """
+        if self.head is None:
+            print("Linked list is empty")
+            return
+        blah = self.head
+        str1 = ''
+        while blah:
+            str1 += str(blah.data)+' --> ' if blah.next else str(blah.data)
+            blah = blah.next
+        print(str1)
         # write code here
 
 

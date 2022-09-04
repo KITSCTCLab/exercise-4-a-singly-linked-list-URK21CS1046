@@ -1,17 +1,3 @@
-from typing import Optional
-
-
-class Node:
-    
-    def __init__(self, data=None, next=None):
-        
-        self.data = data
-        self.next = next
-
-
-from typing import Optional
-
-
 class Node:
 
     def __init__(self, data=None, next=None):
